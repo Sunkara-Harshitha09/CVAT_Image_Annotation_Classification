@@ -784,6 +784,21 @@ Therefore:
 ```text
 39 / 42 × 100 = 92.86%
 
+---
+
+# 🎯 Ground-Truth Model Comparison
+
+To perform a more detailed comparison, both YOLO11n-cls and YOLO26n-cls were evaluated against the **ground-truth labels of all 42 test images**.
+
+The ground truth was obtained from the class folder containing each test image:
+
+```text
+dataset/test/
+├── bianca/
+├── hawaiian/
+├── manager_choice/
+└── pepporoni/
+
 # 🔮 Future Improvements
 
 Possible improvements include:
