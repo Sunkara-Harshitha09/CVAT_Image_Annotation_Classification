@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# YOLO / Ultralytics generated files
+runs/
+*.cache
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Dataset and images
+dataset/
+new_images/
+
+# Original datasets
+Bianca dataset/
+Pepparoni dataset (1)/
+hawaiin dataset/
+manager_choice dataset/
+
+# Dataset archives
+*.zip
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
