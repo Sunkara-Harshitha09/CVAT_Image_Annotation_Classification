@@ -1,0 +1,8 @@
+ultralytics==8.4.121
+torch==2.13.0
+torchvision
+opencv-python
+Pillow
+PyYAML
+numpy
+matplotlib
