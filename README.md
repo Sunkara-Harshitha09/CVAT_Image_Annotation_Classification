@@ -715,6 +715,75 @@ The project demonstrates several important observations:
 
 ---
 
+---
+
+# 🔬 YOLO11n vs YOLO26n Model Comparison
+
+To evaluate the effectiveness of the selected YOLO classification model, a comparative experiment was performed using **YOLO11n-cls** and **YOLO26n-cls**.
+
+Both models were trained and evaluated under the same experimental conditions to ensure a fair comparison.
+
+## Experimental Setup
+
+| Parameter | Value |
+|---|---|
+| Task | Pizza Image Classification |
+| Dataset | 404 images |
+| Number of Classes | 4 |
+| Classes | Bianca, Hawaiian, Manager Choice, Pepporoni |
+| Training Images | 282 |
+| Validation Images | 80 |
+| Test Images | 42 |
+| Image Size | 224 × 224 |
+| Epochs | 20 |
+| Batch Size | 16 |
+| Device | CPU |
+| Framework | Ultralytics YOLO |
+| Python | 3.12 |
+
+## Models Compared
+
+### YOLO11n-cls
+
+The original project model used for pizza classification.
+
+### YOLO26n-cls
+
+A newer YOLO classification model evaluated under the same conditions as YOLO11n-cls.
+
+The purpose of the experiment was to determine whether the newer model provides better classification performance on the same pizza dataset.
+
+---
+
+# 📊 Comparison Results
+
+The models were evaluated using the independent **42-image test set**.
+
+| Metric | YOLO11n-cls | YOLO26n-cls |
+|---|---:|---:|
+| Test Top-1 Accuracy | **92.86%** | **92.86%** |
+| Test Top-5 Accuracy | **100%** | **100%** |
+| Training Time | **801.85 s** | **835.57 s** |
+| Parameters | **1,531,148** | **1,531,148** |
+
+## Top-1 Accuracy
+
+**Top-1 accuracy** measures whether the model's highest-confidence prediction is the correct class.
+
+Both models achieved:
+
+**92.86% Top-1 Accuracy**
+
+With 42 test images, this corresponds to:
+
+- Correct predictions: 39
+- Incorrect predictions: 3
+
+Therefore:
+
+```text
+39 / 42 × 100 = 92.86%
+
 # 🔮 Future Improvements
 
 Possible improvements include:
